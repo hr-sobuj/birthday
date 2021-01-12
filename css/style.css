@@ -1,0 +1,47 @@
+
+@import url('https://fonts.googleapis.com/css?family=Carter+One');
+* {
+    margin: 0;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #423d46;
+	font-family: "carter one",sans-serif;
+}
+
+.full-height {
+  height: 100%;
+  background-color: #423d46;
+}
+.hero-section {
+    margin: 0 auto;
+    
+}
+.middle {
+}
+.name{
+    font-size:100px;
+}
+
+.img-pos{
+    position: absolute;
+    top: 0%;
+    left: 87%;
+}
+
+.cap{
+    position: relative;
+}
+.cap .cap-img{
+    position: absolute;
+        top: -24%;
+        left: 7%;
+    width: 200px;
+    height: 200px;
+}
+.ctn{
+    width:40%;
+    border-radius: 30px;
+    
+}

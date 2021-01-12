@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>Happy Birthday Jyoti!</title>
+
+</head>
+
+<body>
+
+    <div class="full-height">
+        <img src="img/clip.png" class="img-fluid" alt="">
+        <div class="img-pos d-none d-md-block">
+            <img src="img/favicon.png" alt="">
+        </div>
+        <div class="hero-section">
+            <div class="middle">
+                <center class="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <div class="cap">
+                                <!-- <img src="img/cap.png" class="cap-img" alt=""> -->
+                                <img src="img/jyoti.png" class="img-fluid" alt="">
+                            </div>
+
+
+                        </div>
+                        <div class="col-12 col-lg-8 mt-5">
+                            <h1 class="text-light">Happy Birthday</h1>
+                            <h1 class="name text-light">
+                                <span class="text-danger">J</span>
+                                <span class="text-warning">y</span>
+                                <span class="text-danger">o</span>
+                                <span class="text-primary">t</span>
+                                <span class="text-warning">i</span>
+                            </h1>
+
+                            <!--Count down-->
+                            <div class="count mt-5">
+                                <div class="row mt-5">
+                                    <div class="col-6 col-md-6 col-lg-3 mt-3">
+                                        <div class="card bg-danger text-light">
+                                            <div class="card-body">
+                                                <h1 id="date"></h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-6 col-lg-3 mt-3">
+                                        <div class="card bg-warning text-dark">
+                                            <div class="card-body">
+                                                <h1 id="hour"></h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-6 col-lg-3 mt-3">
+                                        <div class="card bg-primary text-light">
+                                            <div class="card-body">
+                                                <h1 id="min"></h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-6 col-lg-3 mt-3">
+                                        <div class="card bg-success text-light">
+                                            <div class="card-body">
+                                                <h1 id="sec"></h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <a href="wishes.html">Wish</a> -->
+                            <a href="wishes.html" class="ctn btn btn-outline-warning p-2 mt-5 mb-5">
+                                <span>Wish</span>
+                                
+                            </a>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </center>
+            </div>
+        </div>
+    
+
+    </div>
+
+
+
+
+    <script>
+        var countDownDate = new Date( "Jan 17, 2021 00:00:00" ).getTime();
+        var x = setInterval( function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor( distance / ( 1000 * 60 * 60 * 24 ) );
+            var hours = Math.floor( ( distance % ( 1000 * 60 * 60 * 24 ) ) / ( 1000 * 60 * 60 ) );
+            var minutes = Math.floor( ( distance % ( 1000 * 60 * 60 ) ) / ( 1000 * 60 ) );
+            var seconds = Math.floor( ( distance % ( 1000 * 60 ) ) / 1000 );
+
+            // Output the result in an element with id="demo"
+
+            document.getElementById( "date" ).innerText = days + "d";
+            document.getElementById( "hour" ).innerText = hours + "h";
+            document.getElementById( "min" ).innerText = minutes + "m";
+            document.getElementById( "sec" ).innerText = seconds + "s";
+
+            if ( distance < 0 ) {
+                clearInterval( x );
+                // document.getElementById( "demo" ).innerHTML = "EXPIRED";
+            }
+        }, 1000 );
+
+    </script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
